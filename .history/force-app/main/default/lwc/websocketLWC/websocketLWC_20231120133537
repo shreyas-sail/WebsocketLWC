@@ -1,0 +1,10 @@
+. paytm-money-button{
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 3px;
+    height: 4rem;
+    width: 37rem;
+    background-color: ##315a9c;
+    margin-top: 1.8rem;
+    max-width: 27.4rem;
+}   

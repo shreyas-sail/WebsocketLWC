@@ -1,0 +1,11 @@
+<template>
+    <template lwc:if={showLoader}>
+        <lightning-spinner size="medium">
+
+        </lightning-spinner>
+    </template>
+    <template lwc:else>
+        <h1>Websocket Component</h1>
+        <lightning-button slds-text-align_center label="Authenicate With Paytm Money" onclick={handleAutenticate}></lightning-button>
+    </template>
+</template>

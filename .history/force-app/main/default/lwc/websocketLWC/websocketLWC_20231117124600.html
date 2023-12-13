@@ -1,0 +1,13 @@
+<template>
+    <template lwc:if={showLoader}>
+        <lightning-button slds-text-align_center label="Get Started" onclick={handleClick}></lightning-button>
+
+    </template>
+    <template lwc:else>
+        <h1>Websocket Component</h1>
+        <lightning-button slds-text-align_center label="Authenicate With Paytm Money" onclick={handleAutenticate}></lightning-button>
+    </template>
+    <template if:true={showChild}>
+        <c-display-index-chart data={marketDataCollection}></c-display-index-chart>
+    </template>
+</template>

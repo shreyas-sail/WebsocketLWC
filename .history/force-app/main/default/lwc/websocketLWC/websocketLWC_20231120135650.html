@@ -1,0 +1,45 @@
+<template>
+  <template lwc:if={showLoader}>
+    <div class="center">
+      <lightning-button
+        slds-text-align_center
+        label="Get Started"
+        class="paytm-money-button"
+        onclick={handleClick}
+      ></lightning-button>
+    </div>
+
+    <c-display-index-chart
+      if:true={showChart}
+      input-value={inputValue}
+      market-data={marketDataCollection}
+      change-percentage={changePercentage}
+      change-absolute={changeAbsolute}
+      list={list}
+    ></c-display-index-chart>
+  </template>
+  <template lwc:else>
+    <h1>Websocket Component</h1>
+    <div class="center">
+      <lightning-button
+        class="paytm-money-button"
+        label="Authenicate With Paytm Money"
+        onclick={handleAutenticate}
+      ></lightning-button>
+    </div>
+    <!-- <lightning-input
+      labe="Send to child"
+      value={inputValue}
+      onchange={handleInputChange}
+    >
+    </lightning-input>
+    <lightning-button
+      slds-text-align_center
+      label="send"
+      onclick={handleButtonClick}
+    ></lightning-button> -->
+  </template>
+  <!-- <template if:true={showChild}> -->
+
+  <!-- </template> -->
+</template>
